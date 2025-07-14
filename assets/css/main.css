@@ -3187,3 +3187,54 @@ input, select, textarea {
 .image-container:hover .overlay {
   opacity: 1;
 }
+
+.hero-section {
+  text-align: center;
+  padding: 6rem 1rem 4rem;
+  background: linear-gradient(to bottom right, #2b6777, #ebceb5); /* dark turquoise to tan */
+  color: white;
+}
+
+.big-title {
+  font-size: 6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.subtitle-reveal {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out 0.8s forwards;
+}
+
+.subtitle-reveal .label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #ffffffaa;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.definition {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 300;
+  color: #fff;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ffffffcc;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
