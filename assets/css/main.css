@@ -3226,7 +3226,7 @@ nav.navbar {
   position: sticky;
   top: 0;
   width: 100%;
-  background: #1976d2;
+  background: #111 !important;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   display: flex;
@@ -3243,13 +3243,13 @@ nav.navbar ul {
 }
 nav.navbar a {
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   font-weight: 600;
   font-size: 1.1rem;
   transition: color 0.2s;
 }
 nav.navbar a:hover, nav.navbar a.active {
-  color: #2bbbad;
+  color: #2bbbad !important;
 }
 #hero {
   min-height: 80vh;
