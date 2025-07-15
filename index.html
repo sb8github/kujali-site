@@ -1,21 +1,134 @@
 <!DOCTYPE HTML>
-<!--
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-<a href="http://html5up.net">HTML5 UP</a>
--->
-<html>
-	<head>
-		<title>Kujali</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+  <title>Kujali | AI for Maternal Health</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="Kujali: AI-driven Decision-Support Tool for Labor Care in low-resource settings. Empowering birth attendants with real-time guidance." />
+  <meta name="keywords" content="Maternal Health, AI, Labor Care, Low-resource, Birth Attendants, Healthcare, Kujali" />
+  <meta property="og:title" content="Kujali | AI for Maternal Health" />
+  <meta property="og:description" content="AI-driven Decision-Support Tool for Labor Care in low-resource settings." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-github-pages-url" />
+  <meta property="og:image" content="images/bg.jpg" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    /* Sticky Navbar */
+    nav.navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0;
+    }
+    nav.navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav.navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    nav.navbar a:hover, nav.navbar a.active {
+      color: #e67e22;
+    }
+    /* Hero Section */
+    #hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('images/bg.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+    #hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 1;
+    }
+    #hero .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 3rem 1rem;
+    }
+    #hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+    }
+    #hero .animated-tagline {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      min-height: 2.5rem;
+      font-weight: 400;
+      opacity: 0.95;
+    }
+    #hero .cta-btn {
+      background: #e67e22;
+      color: #fff;
+      border: none;
+      padding: 1rem 2.5rem;
+      border-radius: 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    #hero .cta-btn:hover {
+      background: #cf711f;
+    }
+    @media (max-width: 600px) {
+      #hero h1 { font-size: 2rem; }
+      #hero .animated-tagline { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body class="is-preload">
+
+<!-- Navigation Bar -->
+<nav class="navbar" aria-label="Main Navigation">
+  <ul>
+    <li><a href="index.html" class="nav-link active">Home</a></li>
+    <li><a href="about.html" class="nav-link">Who We Are</a></li>
+    <li><a href="whatwedo.html" class="nav-link">What We Do</a></li>
+    <li><a href="team.html" class="nav-link">Our Team</a></li>
+    <li><a href="impact.html" class="nav-link">Impact</a></li>
+    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+    <li><a href="#footer" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" tabindex="-1" aria-label="Kujali Hero Section">
+  <div class="hero-content">
+    <h1 class="hero-title">KUJALI</h1>
+    <div class="animated-tagline" id="animatedTagline">Empowering birth attendants with AI-driven guidance</div>
+    <a href="#one" class="cta-btn scrolly">Learn More</a>
+  </div>
+</section>
+
+
+
+
 
 		<!-- Header -->
-<!-- Header -->
 <section id="header">
   <header class="major">
     <h1>Kujali</h1>
@@ -93,7 +206,7 @@
     <div class="image-container">
       <img src="images/sb.jpg" alt="Samhith Bhrugubanda" class="team-photo" />
       <div class="overlay">
-        <p>B.S./M.S.E in Biomedical Engineering, Johns Hopkins University (May 2026). Specializes in designing Al-integrated medical devices for low-resource settings. Brings hands-on experience in medical equipment repair and user-centered product design for LMICs.</p>
+        <p>B.S./M.S.E in Biomedical Engineering, Johns Hopkins University. Specializes in designing Al-integrated medical devices for low-resource settings. Brings hands-on experience in medical equipment repair and user-centered product design for LMICs.</p>
       </div>
     </div>
     <h3>Samhith Bhrugubanda</h3>
@@ -105,8 +218,7 @@
     <div class="image-container">
       <img src="images/sr.jpg" alt="Sidharth Raghavan" class="team-photo" />
       <div class="overlay">
-        <p>B.S./M.S.E in Biomedical Engineering & Computer Science, Johns Hopkins University (May 2026). Leads technical development, with expertise in deploying Al in clinical trials, including PedAccel's validation in the Johns Hopkins PICU.
-Secured $100k+ in grants and managed IRB.Japproved, regulatory-compliant trials.</p>
+        <p>B.S./M.S.E in Biomedical Engineering & Computer Science, Johns Hopkins University. Leads technical development, with expertise in deploying Al in clinical trials, including PedAccel's validation in the Johns Hopkins PICU. Secured $100k+ in grants and managed IRB approved, regulatory-compliant trials.</p>
       </div>
     </div>
     <h3>Sidharth Raghavan</h3>
@@ -493,14 +605,69 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 <script>
+  // Animated tagline for hero section
   document.addEventListener('DOMContentLoaded', () => {
-    const morphTitle = document.getElementById('morphTitle');
-    const subtext = document.getElementById('morphSubtext');
+    const taglines = [
+      'Empowering birth attendants with AI-driven guidance',
+      'Real-time support for safer deliveries',
+      'Bridging gaps in maternal care',
+      'Support for every birth, everywhere.'
+    ];
+    let idx = 0;
+    const taglineEl = document.getElementById('animatedTagline');
+    setInterval(() => {
+      idx = (idx + 1) % taglines.length;
+      taglineEl.textContent = taglines[idx];
+    }, 2600);
+  });
 
-    setTimeout(() => {
-      morphTitle.textContent = 'to care';
-      subtext.style.opacity = '1';
-    }, 2500);
+  // Hero title scroll animation
+  window.addEventListener('scroll', () => {
+    const hero = document.getElementById('hero');
+    const title = document.querySelector('.hero-title');
+    if (!hero || !title) return;
+    const rect = hero.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    // How far the top of hero is from the top of the viewport
+    const scrollY = Math.max(0, -rect.top);
+    // Animate for the first 60% of hero height
+    const maxScroll = hero.offsetHeight * 0.6;
+    const progress = Math.min(scrollY / maxScroll, 1);
+    // Scale from 1 to 1.7, fade from 1 to 0
+    const scale = 1 + 0.7 * progress;
+    const opacity = 1 - progress;
+    title.style.transform = `scale(${scale})`;
+    title.style.opacity = opacity;
+  });
+
+  // Smooth scroll and active nav link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 60,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  window.addEventListener('scroll', () => {
+    const sections = ['#hero', '#one', '#two', '#three', '#impact', '#faq', '#footer'];
+    let scrollPos = window.scrollY + 80;
+    let found = false;
+    for (let i = 0; i < sections.length; i++) {
+      const sec = document.querySelector(sections[i]);
+      if (sec && sec.offsetTop <= scrollPos) {
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        document.querySelector('.nav-link[href="' + sections[i] + '"]').classList.add('active');
+        found = true;
+      }
+    }
+    if (!found) {
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+    }
   });
 </script>
 

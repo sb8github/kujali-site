@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kujali FAQ</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .faq-section { max-width: 700px; margin: 2rem auto; }
+    .faq-item { background: #f4f8fb; border-radius: 1rem; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .faq-question { cursor: pointer; padding: 1.2rem 2rem; font-weight: 700; color: #1976d2; border: none; background: none; width: 100%; text-align: left; outline: none; font-size: 1.1rem; }
+    .faq-answer { display: none; padding: 0 2rem 1.2rem 2rem; color: #333; }
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-question { color: #2bbbad; }
+  </style>
+</head>
+<body>
+  <nav class="navbar" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">Who We Are</a></li>
+      <li><a href="whatwedo.html" class="nav-link">What We Do</a></li>
+      <li><a href="team.html" class="nav-link">Our Team</a></li>
+      <li><a href="impact.html" class="nav-link">Impact</a></li>
+      <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+    </ul>
+  </nav>
+  <section class="main special" style="padding:3rem 0;">
+    <div class="container faq-section">
+      <header class="major">
+        <h1 style="color:#1976d2;">Frequently Asked Questions</h1>
+      </header>
+      <div class="faq-item">
+        <button class="faq-question">What is Kujali?</button>
+        <div class="faq-answer">Kujali is an AI-powered decision-support tool designed to assist birth attendants in low-resource settings with real-time, evidence-based guidance.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How does Kujali help reduce complications?</button>
+        <div class="faq-answer">By providing timely alerts and recommendations, Kujali helps birth attendants make informed decisions, leading to better outcomes for mothers and babies.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is Kujali available offline?</button>
+        <div class="faq-answer">Kujali is designed to work in low-connectivity environments, with offline capabilities for critical features.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How can my clinic get access to Kujali?</button>
+        <div class="faq-answer">Contact us through the website to discuss partnership opportunities and deployment in your clinic or region.</div>
+      </div>
+      <div style="text-align:center; margin-top:2rem;">
+        <a href="index.html" class="cta-btn" style="background:#1976d2; color:#fff;">Back to Home</a>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html> 
