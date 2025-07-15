@@ -3253,8 +3253,8 @@ nav.navbar a:hover, nav.navbar a.active {
   color: #2bbbad !important;
 }
 #hero {
-  min-height: 30vh !important;
-  padding: 2.5rem 0 1.5rem 0 !important;
+  min-height: 80vh !important;
+  padding: 0 !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
