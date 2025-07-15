@@ -504,8 +504,23 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
   });
 </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const containers = document.querySelectorAll('.image-container');
 
+    containers.forEach(container => {
+      container.addEventListener('click', () => {
+        // Close all others
+        containers.forEach(c => {
+          if (c !== container) c.classList.remove('active');
+        });
 
+        // Toggle current
+        container.classList.toggle('active');
+      });
+    });
+  });
+</script>
 
 
 	</body>
