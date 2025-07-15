@@ -3196,27 +3196,30 @@ input, select, textarea {
 }
 
 .hero {
-  border: 3px solid red;
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  background-color: #ffffff;
+  color: #2b6777;
 }
 
-.morph-title {
+#morphTitle {
   font-size: 8rem;
   font-weight: 900;
-  letter-spacing: 0.05em;
-  transition: all 0.6s ease;
+  margin-bottom: 1rem;
+  transition: all 0.5s ease;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  margin-top: 1.5rem;
   color: #444;
+  margin-bottom: 0.5rem;
 }
 
 .subtext {
   font-size: 1rem;
   color: #888;
-  margin-top: 0.25rem;
   opacity: 0;
-  transition: opacity 0.4s ease-in;
+  transition: opacity 0.6s ease-in-out;
 }
+
 
