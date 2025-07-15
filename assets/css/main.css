@@ -3191,8 +3191,12 @@ input, select, textarea {
 .hero {
   text-align: center;
   padding: 6rem 2rem;
-  background-color: #fff;
-  color: #2b6777;
+  background-color: #ffffff; /* ensure it has a visible background */
+  color: #2b6777; /* your dark turquoise text */
+}
+
+.hero {
+  border: 3px solid red;
 }
 
 .morph-title {
