@@ -3312,12 +3312,16 @@ nav.navbar a:hover, nav.navbar a.active {
 
 /* --- Kujali Layout & Aesthetic Improvements --- */
 .main.special {
-  padding: 2.5rem 0 2.5rem 0;
+  padding: 1.2rem 0 2rem 0 !important;
 }
 section.main.special > .container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: flex-start !important;
+  align-items: stretch !important;
+  min-height: unset !important;
+  height: unset !important;
 }
 .card-section, .team-card, .impact-card, .faq-item {
   background: #f7fafd;
