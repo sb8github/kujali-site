@@ -3188,12 +3188,7 @@ input, select, textarea {
   opacity: 1;
 }
 
-.hero {
-  text-align: center;
-  padding: 6rem 2rem;
-  background-color: #ffffff; /* ensure it has a visible background */
-  color: #2b6777; /* your dark turquoise text */
-}
+
 
 .hero {
   text-align: center;
@@ -3207,6 +3202,7 @@ input, select, textarea {
   font-weight: 900;
   margin-bottom: 1rem;
   transition: all 0.5s ease;
+ letter-spacing: 0.05em;
 }
 
 .subtitle {
