@@ -3188,6 +3188,9 @@ input, select, textarea {
   opacity: 1;
 }
 
+.image-container.active .overlay {
+  opacity: 1;
+}
 
 
 .hero {
