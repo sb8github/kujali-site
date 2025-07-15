@@ -1964,10 +1964,10 @@ input, select, textarea {
 				background: #dddddd;
 				content: '';
 				display: block;
-				height: 2px;
+				height: 4px;
 				margin: 0.75em auto 0 auto;
 				position: relative;
-				width: 4em;
+				width: 8em;
 			}
 
 		header.major p {
