@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #313a3d; background-attachment: fixed, fixed; background-image: url('images/overlay.png'), url('../../images/bg.jpg'); background-position: top left, center center; background-repeat: repeat, none; background-size: auto, cover; min-height: 100vh;">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kujali | What We Do</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    body {
+      background: none !important;
+      min-height: 100vh;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar" aria-label="Main Navigation">
@@ -12,9 +18,7 @@
       <li><a href="index.html" class="nav-link">Home</a></li>
       <li><a href="about.html" class="nav-link">Who We Are</a></li>
       <li><a href="whatwedo.html" class="nav-link active">What We Do</a></li>
-      <li><a href="team.html" class="nav-link">Our Team</a></li>
-      <li><a href="impact.html" class="nav-link">Impact</a></li>
-      <li><a href="faq.html" class="nav-link">FAQ</a></li>
+      <li><a href="index.html#contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
   <section class="hero-section">
@@ -27,26 +31,54 @@
 
         <div class="mission-vision">
           <div class="block">
-            <h2>Key Features</h2>
-            <p>
-              <ul class="styled-list">
-                <li>Real-time, AI-driven clinical guidance for labor and delivery</li>
-                <li>Offline functionality for low-connectivity settings</li>
-                <li>Customizable protocols aligned with WHO standards</li>
-                <li>Easy-to-use interface for rapid adoption</li>
-                <li>Data analytics for continuous improvement</li>
-              </ul>
-            </p>
+            <h2 style="color:#2bbbad;">Key Features</h2>
+            <div class="features-grid">
+              <div class="feature-card">
+                <span class="feature-icon"><i class="fas fa-brain"></i></span>
+                <h3>AI-Driven Guidance</h3>
+                <p>Real-time, evidence-based clinical support for labor and delivery.</p>
+              </div>
+              <div class="feature-card">
+                <span class="feature-icon"><i class="fas fa-wifi"></i></span>
+                <h3>Offline Functionality</h3>
+                <p>Works in low-connectivity settings for uninterrupted care.</p>
+              </div>
+              <div class="feature-card">
+                <span class="feature-icon"><i class="fas fa-file-medical-alt"></i></span>
+                <h3>WHO-Aligned Protocols</h3>
+                <p>Customizable protocols aligned with global standards.</p>
+              </div>
+              <div class="feature-card">
+                <span class="feature-icon"><i class="fas fa-mobile-alt"></i></span>
+                <h3>User-Friendly Interface</h3>
+                <p>Easy to use for rapid adoption by birth attendants.</p>
+              </div>
+              <div class="feature-card">
+                <span class="feature-icon"><i class="fas fa-chart-line"></i></span>
+                <h3>Data Analytics</h3>
+                <p>Insights for continuous improvement and better outcomes.</p>
+              </div>
+            </div>
           </div>
           <div class="block">
-            <h2 style="margin-top: 2.5rem;">Our Services</h2>
-            <p>
-              <ul class="styled-list">
-                <li>Training and onboarding for birth attendants</li>
-                <li>Technical support and updates</li>
-                <li>Partnerships with clinics and health organizations</li>
-              </ul>
-            </p>
+            <h2 style="color:#2bbbad; margin-top:2rem;">Our Services</h2>
+            <div class="features-grid">
+              <div class="feature-card">
+                <span class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></span>
+                <h3>Training & Onboarding</h3>
+                <p>Comprehensive training for birth attendants and staff.</p>
+              </div>
+              <div class="feature-card">
+                <span class="feature-icon"><i class="fas fa-tools"></i></span>
+                <h3>Technical Support</h3>
+                <p>Ongoing support and updates for all users.</p>
+              </div>
+              <div class="feature-card">
+                <span class="feature-icon"><i class="fas fa-handshake"></i></span>
+                <h3>Partnerships</h3>
+                <p>Collaborations with clinics and health organizations.</p>
+              </div>
+            </div>
           </div>
         </div>
   

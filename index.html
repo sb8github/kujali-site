@@ -108,9 +108,6 @@
     <li><a href="index.html" class="nav-link active">Home</a></li>
     <li><a href="about.html" class="nav-link">Who We Are</a></li>
     <li><a href="whatwedo.html" class="nav-link">What We Do</a></li>
-    <li><a href="team.html" class="nav-link">Our Team</a></li>
-    <li><a href="impact.html" class="nav-link">Impact</a></li>
-    <li><a href="faq.html" class="nav-link">FAQ</a></li>
     <li><a href="#contact" class="nav-link">Contact</a></li>
   </ul>
 </nav>
@@ -120,7 +117,7 @@
   <div class="hero-content">
     <h1 class="hero-title">KUJALI</h1>
     <div class="animated-tagline" id="animatedTagline">AI-driven Decision-Support Tool for Labor Care</div>
-    <a href="about.html" class="cta-btn scrolly" style="background:#2bbbad; color:#fff;">See Our Impact</a>
+    <a href="about.html" class="cta-btn scrolly" style="background:#2bbbad; color:#fff;">Learn More</a>
   </div>
 </section>
 
@@ -134,11 +131,11 @@
     </div>
     <div class="impact-card">
       <div class="impact-number" data-target="40" style="font-size:3.5rem; font-weight:900; color:#2bbbad;">0%</div>
-      <div class="impact-desc" style="font-size:1.15rem; font-weight:600;">Decrease in unnecessary interventions</div>
+      <div class="impact-desc" style="font-size:1.15rem; font-weight:600;">Potential decrease in unnecessary interventions</div>
     </div>
     <div class="impact-card">
       <div class="impact-number" data-target="2" style="font-size:3.5rem; font-weight:900; color:#43a047;">0M+</div>
-      <div class="impact-desc" style="font-size:1.15rem; font-weight:600;">Poised to impact over 2 million births<br>Preventing 500k deaths</div>
+      <div class="impact-desc" style="font-size:1.15rem; font-weight:600;">Poised to impact over 2 million births, preventing 500k deaths</div>
     </div>
   </div>
 </section>
@@ -215,10 +212,10 @@
 </section>
 
 <!-- Our Team Section -->
-<section id="our-team" class="main special">
-  <div class="container">
-    <header class="major"><h2>Our Team</h2></header>
-    <p>Meet the people behind Kujali</p>
+<section id="our-team" class="main special card-section" style="margin-top:1.5rem;">
+	<div class="home-page-flex-container" style="max-width:900px;">
+	<header class="major" style="margin-top:0;"><h2>Our Team</h2></header>
+	<p style="text-align:center; font-size:1.1rem;">Meet the people behind Kujali</p>
     <div class="team-grid">
       <div class="team-card">
         <img src="images/sb.jpg" alt="Samhith Bhrugubanda" />
@@ -239,6 +236,7 @@
         <p>Former CMO at Jhpiego and inventor of the paper and digital ePartogram. Offers access to WHO-aligned protocols and clinical networks across Africa, with decades of expertise in maternal health innovation and LMIC care delivery.</p>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -270,9 +268,7 @@
 			<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
 			<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 		</ul>
-		<ul class="copyright">
-			<li>&copy; Kujali</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
-		</ul>
+
 	</div>
 </section>
 
@@ -380,7 +376,7 @@ function animateCounter(el, target, suffix = '') {
   let current = 0;
   const isMillion = suffix === 'M+';
   const end = isMillion ? target * 1000000 : target;
-  const duration = 1200;
+  const duration = 10000;
   const step = Math.ceil(end / (duration / 16));
   function update() {
     current += step;
